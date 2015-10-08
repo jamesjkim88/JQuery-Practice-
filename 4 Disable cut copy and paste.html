@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="text"/>
+<div>try to copy and paste on the input</div>
+<input type="text" value = "try to cut this and paste"/>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+    $('input').bind("cut copy paste",function(e) {
+        e.preventDefault();
+    });
+</script>
+</body>
+</html>

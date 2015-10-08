@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title></title>
+    <style>
+        html,body{
+            height: 100%;
+        }
+
+        .container{
+            border: 1px solid gray;
+            height: 100%;
+        }
+
+        header, section{
+            margin: 0 auto;
+            width: 50%;
+        }
+
+        header{
+            border: 1px solid black;
+        }
+
+        section{
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Section - 1 <i class="fa fa-arrow-circle-o-up"></i></header>
+        <section class = "section-1">Etiam vitae tempor est. Aliquam luctus lacinia tincidunt. Maecenas eleifend in sem sed sodales.
+            Duis ac sem ac eros maximus facilisis. Nullam eu mauris metus. Sed lacinia iaculis ex cursus venenatis.
+            Vivamus scelerisque est in facilisis pharetra. Suspendisse dictum, orci sed faucibus venenatis, mi augue laoreet urna, quis facilisis augue magna eu libero.
+            Nulla non sodales magna. Curabitur sem risus, sagittis nec tellus vel, vestibulum facilisis diam.</section>
+
+        <header>Section - 1 <i class="fa fa-arrow-circle-o-down"></i></header>
+        <section class = "section-2">Etiam vitae tempor est. Aliquam luctus lacinia tincidunt. Maecenas eleifend in sem sed sodales.
+            Duis ac sem ac eros maximus facilisis. Nullam eu mauris metus. Sed lacinia iaculis ex cursus venenatis.
+            Vivamus scelerisque est in facilisis pharetra. Suspendisse dictum, orci sed faucibus venenatis, mi augue laoreet urna, quis facilisis augue magna eu libero.
+            Nulla non sodales magna. Curabitur sem risus, sagittis nec tellus vel, vestibulum facilisis diam.</section>
+
+        <header>Section - 1 <i class="fa fa-arrow-circle-o-down"></i></header>
+        <section class = "section-3">Etiam vitae tempor est. Aliquam luctus lacinia tincidunt. Maecenas eleifend in sem sed sodales.
+            Duis ac sem ac eros maximus facilisis. Nullam eu mauris metus. Sed lacinia iaculis ex cursus venenatis.
+            Vivamus scelerisque est in facilisis pharetra. Suspendisse dictum, orci sed faucibus venenatis, mi augue laoreet urna, quis facilisis augue magna eu libero.
+            Nulla non sodales magna. Curabitur sem risus, sagittis nec tellus vel, vestibulum facilisis diam.</section>
+
+    </div>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <script>
+        var up = $(".fa-arrow-circle-o-up");
+        var down = $(".fa-arrow-circle-o-down");
+
+        $(".section-2, .section-3").hide();
+
+        $("i").click(function(){
+
+            $(".section-1").toggle("slow");
+            $("i").toggleClass(down);
+            $("i").toggleClass(up);
+
+        })
+    </script>
+</body>
+</html>

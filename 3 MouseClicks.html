@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="text"/>
+<div></div>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+    $("input").on("mousedown", function(evt){
+        $("div").html(event.type + ": " + event.which);
+    }).on("contextmenu", function(){
+        return false;
+    });
+</script>
+</body>
+</html>

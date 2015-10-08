@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .square{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<div class = "square">Try to right-click on this box</div>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $(".square").on("contextmenu",function(){
+            return false;
+        });
+    });
+</script>
+</body>
+</html>

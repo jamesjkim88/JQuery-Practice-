@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        img{
+            width: 100%;
+        }
+
+        div.container{
+            margin: 0 auto;
+            border: 1px solid black;
+            height: 750px;
+            width: 750px;
+        }
+
+        .row{
+            margin: 0 auto;
+            margin-top: 15px;
+            width: 650px;
+            height: 150px;
+            border: 1px solid black;
+        }
+
+        .selfie{
+            margin-top: 10px;
+            margin-left: 15px;
+            width: 125px;
+            float: left;
+        }
+
+        .fa{
+            float: right;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <i class="fa fa-times x-1"></i>
+            <div class="selfie">
+                <img src="https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-frc3/v/t1.0-9/1011738_10151522926508719_1456109723_n.jpg?oh=7b80be8c36cc809d7509c88ca4d62359&oe=56CC5D0B" alt="Rocky"/>
+
+            </div>
+            <p>Name: Rocky</p>
+            <p>Occupation: CEO</p>
+        </div>
+        <div class="row">
+            <i class="fa fa-times x-2"></i>
+            <div class="selfie">
+                <img src="https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-xap1/v/t1.0-9/10896923_902979379736305_1320593164950728733_n.jpg?oh=b74aea20e221ea25b12a5706def3dc03&oe=5696ADEB" alt="OG"/>
+
+            </div>
+            <p>Name: OG</p>
+            <p>Occupation: Security</p>
+        </div>
+        <div class="row">
+            <i class="fa fa-times x-3"></i>
+            <div class="selfie">
+                <img src="https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-xaf1/t31.0-8/271487_10150996694716734_1408997343_o.jpg" style="height: 125px" alt="Diamond"/>
+
+            </div>
+            <p>Name: Diamond</p>
+            <p>Occupation: Momma Dog</p>
+        </div>
+    </div>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        $(".x-1").click(function(){
+            console.log("it works");
+            $(".row:first").hide();
+        })
+
+        $(".x-2").click(function(){
+            console.log("it works");
+            $(".row:nth-child(2)").hide();
+        })
+
+        $(".x-3").click(function(){
+            console.log("it works");
+            $(".row:last").hide();
+        })
+    </script>
+</body>
+</html>

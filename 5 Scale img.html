@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .animation{
+            transform: scale(1.5,1.5);
+            transition: all 1s linear;
+        }
+
+        img{
+            width: 100%;
+            transition: all 1s linear;
+        }
+        div{
+            height: 550px;
+            width: 550px;
+            margin: 0 auto;
+            margin-top: 150px;
+            transition: all 1s linear;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img src="https://images.unsplash.com/photo-1441742917377-57f78ee0e582?q=80&fm=jpg&s=a79e8a2beba8b3a1ad251798a9024d8b" alt=""/>
+</div>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+    $('img').hover(function() {
+        $(this).toggleClass("animation");
+
+    });
+</script>
+</body>
+</html>
